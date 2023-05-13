@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Falling Leaves Animation</title>
+    <style>
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:&display=swap');
+
+
+
+body {
+        
+        height: 100vh;
+        background-color: #f2f2f2;
+        background-image: url("background.png");
+        background-size: cover; /* optional */
+        
+      } 
+
+      
+      /* Set up the container for the leaves */
+      .leaves-container {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+      
+      /* Style for the individual leaves */
+      .leaf {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #9ac23c00;
+        border-radius: 50%;
+        animation: falling 8s ease-in-out infinite;
+      }
+
+      /* Keyframe animation for the falling leaves */
+      @keyframes falling {
+        0% {
+          transform: translateY(-10%);
+        }
+        100% {
+          transform: translateY(3220%);
+        }
+      }
+
+      /* Position each leaf randomly within the container */
+      .leaf:nth-child(1) {
+        left: 5%;
+        top: -5%;
+        animation-delay: 0.5s;
+      }
+      .leaf:nth-child(2) {
+        left: 25%;
+        top: -10%;
+        animation-delay: 2s;
+      }
+      .leaf:nth-child(3) {
+        left: 45%;
+        top: -15%;
+        animation-delay: 3.5s;
+      }
+      .leaf:nth-child(4) {
+        left: 65%;
+        top: -20%;
+        animation-delay: 1s;
+      }
+      .leaf:nth-child(5) {
+        left: 85%;
+        top: -25%;
+        animation-delay: 2.5s;
+      }
+      .leaf:nth-child(6) {
+        left: 95%;
+        top: -15%;
+        animation-delay: 2.5s;
+      }
+
+      .leaf:nth-child(7) {
+        left: 55%;
+        top: -15%;
+        animation-delay: 1.5s;
+      }
+
+      .leaf:nth-child(8) {
+        left: 20%;
+        top: -15%;
+        animation-delay: 1.0s;
+      }
+      
+      .login-sqr{
+        position:absolute; 
+        top: 100px;
+        left: 580px;
+        width: 350px;
+        height: 300px;
+        padding-top: 20;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color:rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(10px);
+        z-index: -5;
+        border-radius: 20px;
+
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Center the content */
+     
+      
+      /* Style the login box */
+      .login-box {
+        position: relative;
+        top: -70%;
+        left: 38%;
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color:rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: -5;
+        text-align: center;
+      }
+      
+      /* Style the form elements */
+      label {
+        display: block;
+        margin-bottom: 2px;
+        font-weight: bold;
+        
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        width: 90%;
+        height: 45px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      input[type="submit"] {
+        background-color: #FFA15F;
+        font-family: 'Poppins', sans-serif;
+        
+        width: 90%;
+        height: 45px;;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .login-box {
+          max-width: 300px;
+        }
+      }
+      /* Add more leaves by duplicating the .leaf style block and modifying the nth-child and animation-delay values */
+    </style>
+  </head>
+  <body>
+    <div class="leaves-container">
+      <!-- Add 20 leaves to the container -->
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <div class="leaf"><img src="leave2.png"></div>
+      <br>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+      <div class="leaf"><img src="leave1.png"></div>
+
+  
+      
+    </div>
+
+    <div class="login-box">
+      <h2 style="text-align: center;font-family: 'Poppins', sans-serif;">Sign In</h2>
+      <br>
+      <form>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Username" required >
+      
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" required >
+      
+        <input type="submit" value="Login">
+      </form>
+      <p style="text-align: left;padding-left: 20px; width: 50%;">Forgot Password </p>
+      <p style="text-align: start;">ss</p>
+      
+    </div>
+  </body>
+</html>

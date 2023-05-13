@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <style>
+      /* Basic reset styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Center the content */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+      
+      /* Style the login box */
+      .login-box {
+        max-width: 400px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Style the form elements */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .login-box {
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </body>
+</html>
